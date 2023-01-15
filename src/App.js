@@ -3,6 +3,9 @@ import { HelloWord } from './components/HelloWord';
 import { MiNombre } from './components/MiNombre';
 import Persona from './components/Persona';
 import Frase from './components/Frase';
+import List from './components/List';
+import Evento from './components/Evento';
+import Formulario from './components/Formulario'
 
 function App() {
   const nombre = 'Maria'
@@ -18,8 +21,11 @@ function App() {
         profesion="ing n"
         foto = "https://"/>
       <Frase/>
-    </div>
-   
+      <List/>
+      <Evento/>
+      <Formulario/>
+
+    </div> 
     
   )
 }
