@@ -7,10 +7,13 @@ import List from './components/List';
 import Evento from './components/Evento';
 import Formulario from './components/Formulario'
 import Condicional from './components/evento/Condicional';
+import OtraLista from './components/otraLista';
 
 function App() {
   const nombre = 'Maria'
- 
+  const milist = 0
+  const milist2 =['aee','bdqq','c11','d1/11']
+
   //aconst url = 'http://via.dddjj.com/150'
   return (
     <div className='App'>
@@ -27,6 +30,8 @@ function App() {
       <Formulario/>
 
       <Condicional/>
+      <OtraLista items ={milist}/>
+      <OtraLista items ={milist2}/>
 
 
 
