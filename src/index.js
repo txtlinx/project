@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+Fuente: https://www.iteramos.com/pregunta/88513/como-se-puede-saber-la-version-de-react-que-se-esta-ejecutando-en-el-navegador
 root.render(
   <React.StrictMode>
     <App />
