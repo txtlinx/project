@@ -6,6 +6,7 @@ import Frase from './components/Frase';
 import List from './components/List';
 import Evento from './components/Evento';
 import Formulario from './components/Formulario'
+import Condicional from './components/evento/Condicional';
 
 function App() {
   const nombre = 'Maria'
@@ -24,6 +25,10 @@ function App() {
       <List/>
       <Evento/>
       <Formulario/>
+
+      <Condicional/>
+
+
 
     </div> 
     
