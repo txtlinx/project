@@ -10,11 +10,12 @@ import OtraLista from './components/otraLista';
 import { useState } from 'react';
 import Nombre from './components/Nombre'
 import Sao from './components/Sau'
-import {BrowserRouter as Router, Routes, Route, Link }from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route }from 'react-router-dom'
 import Home from './components/pages/Home'
 import Contacto from './components/pages/Contacto'
 import Empresa from './components/pages/Empresa'
-import NavBar from './components/Navbar'
+import NavBar from './components/layout/Navbar'
+import Footer from './components/layout/Footer';
 
 function App() {
 
@@ -39,7 +40,6 @@ function App() {
       <OtraLista items ={milist}/>
       <OtraLista items ={milist2}/>
       <Nombre setNombre={setNombre}></Nombre>
-       <Sao nombre={nombre}/>
       <Router>
        <NavBar/>
         <Routes>
@@ -53,10 +53,11 @@ function App() {
          <Routes>
             <Route path="/Empresa" element={<Empresa/>}/>
          </Routes>
+         <Footer/>
       </Router>
-
+     
+      
     </div> 
-    
   )
 }
 

@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-
+import style from './Navbar.module.css'
 export function Navbar(){
     return (
-        <ul>
-            <li>
+        <ul className={style.list}>
+            <li className={style.item}>
                <Link to="/">Home</Link> 
             </li>
-            <li>
+            <li className={style.item}>
                <Link to="/contacto">Contacto</Link> 
             </li>
-            <li>
+            <li className={style.item}>
                <Link to="/empresa">Empresa</Link> 
             </li>
         </ul>
