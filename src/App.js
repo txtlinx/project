@@ -10,6 +10,11 @@ import OtraLista from './components/otraLista';
 import { useState } from 'react';
 import Nombre from './components/Nombre'
 import Sao from './components/Sau'
+import {BrowserRouter as Router, Routes, Route, Link }from 'react-router-dom'
+import Home from './components/pages/Home'
+import Contacto from './components/pages/Contacto'
+import Empresa from './components/pages/Empresa'
+import NavBar from './components/Navbar'
 
 function App() {
 
@@ -35,7 +40,20 @@ function App() {
       <OtraLista items ={milist2}/>
       <Nombre setNombre={setNombre}></Nombre>
        <Sao nombre={nombre}/>
+      <Router>
+       <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+         </Routes>
 
+        <Routes>
+            <Route path="/Contacto" element={<Contacto/>}/>
+         </Routes>
+
+         <Routes>
+            <Route path="/Empresa" element={<Empresa/>}/>
+         </Routes>
+      </Router>
 
     </div> 
     
